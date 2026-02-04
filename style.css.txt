@@ -1,0 +1,104 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #fff1f5, #ffe4ec);
+  text-align: center;
+  color: #4a2c2a;
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+  padding: 40px 20px;
+  animation: fade 0.8s ease;
+}
+
+.page.active {
+  display: block;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+input {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background: #ff6f91;
+  border: none;
+  padding: 12px 22px;
+  margin: 10px;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+  background: #ff4f7b;
+  transform: scale(1.05);
+}
+
+.main-img {
+  width: 85%;
+  max-width: 320px;
+  border-radius: 18px;
+  margin: 25px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.letter {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  max-width: 500px;
+  margin: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.end-text {
+  margin-top: 25px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

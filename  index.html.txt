@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Ansh ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- PASSWORD PAGE -->
+<section class="page active" id="passwordPage">
+  <h1>💌 Private Space</h1>
+  <p>This is only for you, Ansh 🤍</p>
+
+  <input type="password" id="passwordInput" placeholder="Enter our password 💕">
+  <br><br>
+  <button onclick="checkPassword()">Enter</button>
+
+  <p id="error" style="color:red; display:none;">Wrong password 😢</p>
+</section>
+
+<!-- MUSIC -->
+<audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- PAGE 1 -->
+<section class="page" id="page1">
+  <h1>Hi Ansh 🤍</h1>
+  <p>There is something I made only for you…</p>
+  <img src="start.jpg" class="main-img">
+  <button onclick="nextPage()">Start 💌</button>
+</section>
+
+<!-- QUIZ 1 -->
+<section class="page" id="page2">
+  <h2>Little Quiz 🌸</h2>
+  <p>Where did we first start talking?</p>
+  <button onclick="correct()">Discord 💖</button>
+  <button onclick="wrong()">Instagram</button>
+</section>
+
+<!-- QUIZ 2 -->
+<section class="page" id="page3">
+  <p>Who gave whose Instagram first?</p>
+  <button onclick="correct()">You gave me yours 🤍</button>
+  <button onclick="wrong()">I checked it myself</button>
+</section>
+
+<!-- QUIZ 3 -->
+<section class="page" id="page4">
+  <p>How long have we been together?</p>
+  <button onclick="correct()">4 years ❤️</button>
+  <button onclick="wrong()">2 years</button>
+</section>
+
+<!-- LETTER -->
+<section class="page" id="page5">
+  <h2>For You 💌</h2>
+  <p class="letter">
+    We met when you randomly texted me on Discord.
+    You gave me your Instagram, and I didn’t even check it.
+    Then you called me and said, “Follow me on Instagram.”
+    <br><br>
+    From that small moment to 4 beautiful years,
+    you became my comfort, my home.
+    <br><br>
+    And today, I just want to ask you something…
+  </p>
+  <button onclick="nextPage()">Next 🤍</button>
+</section>
+
+<!-- VALENTINE QUESTION -->
+<section class="page" id="page6">
+  <h1>Will you be my Valentine? 🌹</h1>
+  <img src="final.jpg" class="main-img">
+  <div class="buttons">
+    <button onclick="nextPage()">YES 💕</button>
+    <button onclick="moveButton(this)">No 🙈</button>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="page" id="page7">
+  <h2>Our Memories 📸</h2>
+  <div class="gallery">
+    <img src="gallery1.jpg">
+    <img src="gallery2.jpg">
+    <img src="gallery3.jpg">
+    <img src="gallery4.jpg">
+    <img src="gallery5.jpg">
+  </div>
+  <p class="end-text">Forever us 🤍</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
